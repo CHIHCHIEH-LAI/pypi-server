@@ -17,7 +17,7 @@ poetry config virtualenvs.prefer-active-python true
 1. Set the local Python version
 
 ```sh
-pyenv local 3.9.13
+pyenv local 3.9
 ```
 
 1. Initialize a new Poetry project
