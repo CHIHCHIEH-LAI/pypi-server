@@ -39,7 +39,7 @@ poetry shell
 1. Configure a custom package repository
 
 ```sh
-poetry config repositories.local http://127.0.0.1:6666/
+poetry config repositories.local http://127.0.0.1:8082/
 ```
 
 2. Publish a package to the custom repository
@@ -53,7 +53,7 @@ poetry publish --build -r local
 1. Add a custom package source
 
 ```sh
-poetry source add local http://127.0.0.1:6666
+poetry source add local http://127.0.0.1:8082
 ```
 
 2. Install a package from the custom source
