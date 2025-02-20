@@ -13,7 +13,7 @@ WORKDIR /app
 RUN pip install pypiserver
 
 # Expose the port for pypiserver
-EXPOSE 6666
+EXPOSE 8082
 
 # Define environment variables
 ENV S3_BUCKET="package"
