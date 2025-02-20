@@ -42,7 +42,12 @@ poetry shell
 poetry config repositories.local http://127.0.0.1:8082/
 ```
 
-2. Publish a package to the custom repository
+2. Disable keyring for the poetry
+```sh
+poetry config keyring.enabled false
+```
+
+3. Publish a package to the custom repository
 
 ```sh
 poetry publish --build -r local
