@@ -8,25 +8,25 @@
 poetry config virtualenvs.in-project true
 ```
 
-1. Prefer the active Python interpreter for virtual environments
+2. Prefer the active Python interpreter for virtual environments
 
 ```sh
 poetry config virtualenvs.prefer-active-python true
 ```
 
-1. Set the local Python version
+3. Set the local Python version
 
 ```sh
 pyenv local 3.9
 ```
 
-1. Initialize a new Poetry project
+4. Initialize a new Poetry project
 
 ```sh
 poetry init
 ```
 
-1. Activate the Poetry virtual environment
+5. Activate the Poetry virtual environment
 
 ```sh
 poetry shell
@@ -42,7 +42,7 @@ poetry shell
 poetry config repositories.local http://127.0.0.1:6666/
 ```
 
-1. Publish a package to the custom repository
+2. Publish a package to the custom repository
 
 ```sh
 poetry publish --build -r local
@@ -56,7 +56,7 @@ poetry publish --build -r local
 poetry source add local http://127.0.0.1:6666
 ```
 
-1. Install a package from the custom source
+2. Install a package from the custom source
 
 ```sh
 poetry add test_pkg@0.1.0 --source local
